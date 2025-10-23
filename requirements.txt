@@ -1,9 +1,11 @@
-# === Web Dashboard ===
-streamlit==1.39.0        # versi stabil sebelum perubahan besar
-Pillow==10.4.0            # versi stabil & ringan
+# Dashboard dependencies
+streamlit==1.50.0
+Pillow==10.4.0
+numpy==1.26.4
 
-# === ML / DL ===
-tensorflow==2.15.0        # versi paling kompatibel di cloud & ultralytics
-ultralytics==8.3.20       # versi terbaru (YOLOv8)
-opencv-python-headless==4.9.0.80  # aman untuk server tanpa GUI
-numpy==1.26.4             # kompatibel dengan TensorFlow 2.15 dan Ultralytics
+# Deep learning (compatible with Python 3.13)
+tf-nightly==2.20.0.dev20251021  # nightly build TensorFlow (CPU only)
+ultralytics==8.3.20
+
+# CV utils (no GUI)
+opencv-python-headless==4.10.0.84
